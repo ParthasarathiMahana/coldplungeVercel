@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+}
+.mainContainer{
+    padding-top: 1.5rem;
+    border: 2px solid red;
+    height: 70vh;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 32.5vw;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+/* select is there in DoubtForm component */
+.mainContainer input, select{
+    width: 60%;
+    margin-bottom:2%;
+    height: 8%;
+    font-size: 1rem;
+    border: none;
+    outline: 2px solid red;
+    font-weight: bold;
+}
+/* present in DoubtForm component */
+.mainContainer textarea{
+    width: 60%;
+    margin-bottom:2%;
+    height: 8%;
+    font-size: 1rem;
+    border: none;
+    outline: 2px solid red;
+    font-weight: bold;
+    height: 65%;
+}
+.mainContainer button{
+    margin-bottom:3%;
+    height: 8%;
+    font-size: 1rem;
+    outline: 2px solid red;
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    color: red;
+}
+.mainContainer button:hover{
+    background-color: red;
+    color: white;
+}
+.mainContainer button:hover{
+    cursor: pointer;
+}
+.passwordSection{
+    width: 51%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 9%;
+    margin-bottom:8%;
+    /* border: 1px solid red; */
+}
+.passwordSection input{
+    width: 80%;
+    height: 95%;
+}
+.passwordSection button{
+    width: 20%;
+    height: 102%;
+}
+.linkToSignupPage{
+    text-decoration: underline;
+    font-size: 1.5rem;
+}
+.linkToSignupPage:hover{
+    cursor: pointer;
+    color: red;
+}
+
+/* mobile phones */
+@media screen and (max-width: 600px) and (min-width: 280px) and (min-width: 280px){
+    .mainContainer{
+        height: 40vh;
+        width: 80%;
+        margin-left: 10%;
+    }
+    .mainContainer input{
+        width: 70%;
+    }
+    .mainContainer textarea{
+        width: 70%;
+    }
+    select{
+        width: 71%;
+    }
+}
+
+/* tablets */
+@media only screen and (max-width: 1280px) and (min-width: 601px){
+    .mainContainer{
+        height: 50vh;
+        width: 40%;
+        margin-left: 30%;
+    }
+    .mainContainer input{
+        width: 80%;
+    }
+    .mainContainer button{
+        margin-bottom:5%;
+        height: 9%;
+        width: 20%;
+        font-size: 0.8rem;
+    }
+    .mainContainer textarea{
+        width: 80%;
+    }
+    select{
+        width: 81%;
+    }
+}

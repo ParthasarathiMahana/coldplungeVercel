@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+}
+.mainContainer{
+    padding-top: 1.5rem;
+    border: 2px solid red;
+    height: 60vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30vw;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.mainContainer input{
+    width: 50%;
+    margin-bottom:3%;
+    height: 8%;
+    font-size: 1rem;
+    border: none;
+    outline: 2px solid red;
+    font-weight: bold;
+}
+.mainContainer button{
+    margin-bottom:5%;
+    height: 8%;
+    font-size: 1rem;
+    outline: 2px solid red;
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    color: red;
+}
+.mainContainer button:hover{
+    background-color: red;
+    color: white;
+}
+.mainContainer button:hover{
+    cursor: pointer;
+}
+.passwordSection{
+    width: 51%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 9%;
+    margin-bottom:8%;
+    /* border: 1px solid red; */
+}
+.passwordSection input{
+    width: 80%;
+    height: 95%;
+}
+.passwordSection button{
+    width: 20%;
+    height: 102%;
+}
+.linkToSignupPage{
+    text-decoration: underline;
+    font-size: 1.5rem;
+}
+.linkToSignupPage:hover{
+    cursor: pointer;
+    color: red;
+}
+
+/* mobile phones */
+@media screen and (max-width: 600px) and (min-width: 280px) and (min-width: 280px){
+    .mainContainer{
+        height: 40vh;
+        width: 60%;
+        margin-left: 20%;
+    }
+    .mainContainer input{
+        width: 90%;
+    }
+    .passwordSection{
+        width: 91%;
+    }
+    .passwordSection button{
+        font-size: 0.5rem;
+        font-weight: bold;
+    }
+    .linkToSignupPage{
+        text-decoration: underline;
+        font-size: 1rem;
+    }
+}
+
+/* tablets */
+@media only screen and (max-width: 1280px) and (min-width: 601px){
+    .mainContainer{
+        height: 50vh;
+        width: 50%;
+        margin-left: 25%;
+    }
+    .mainContainer input{
+        width: 80%;
+    }
+    .mainContainer button{
+        margin-bottom:5%;
+        height: 7%;
+        width: 20%;
+    }
+    .passwordSection{
+        width: 81%;
+    }
+    .passwordSection button{
+        height: 105%;
+        font-size: 0.9rem;
+    }
+    .linkToSignupPage{
+        text-decoration: underline;
+        font-size: 1rem;
+    }
+}

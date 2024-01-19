@@ -1,0 +1,85 @@
+.mainContainer{
+    font-family: sans-serif;
+    /* border: 2px solid red; */
+}
+.listItem{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 0.5rem;
+}
+.listItem h3{
+    width: 16%;
+    border-bottom: 2px solid red;
+    color: red;
+}
+.doubtContainer{
+    display: flex;
+    flex-direction: column;
+}
+.doubtsWithReplyBox{
+    display: flex;
+    flex-direction: column;
+}
+.doubtRow{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.doubtRow div{
+    margin-bottom: 0.5rem;
+    width: 16%;
+    padding: 0.5rem;
+    overflow-wrap: break-word;
+}
+.statBtn{
+    border: none;
+    font-weight: bold;
+    height: 1.5rem;
+    color: white;
+}
+.statBtn:hover{
+    cursor: pointer;
+}
+@media screen and (max-width: 600px) and (min-width: 280px){
+    .listItem{
+        justify-content: space-between;
+        width: 100%;
+    }
+    .listItem h3{
+        width: 15%;
+        font-size: 0.8rem;
+        margin: 0.1rem;
+    }
+    .doubtRow{
+        /* border: 1px solid black; */
+        margin: 0;
+        width: 99%;
+    }
+    .doubtRow div{
+        font-size: 0.7rem;
+        width: 20%;
+        /* border: 1px solid black; */
+    }
+    .topic, .topicHeading{
+        display: none;
+    }
+    .time, .timeHeading{
+        display: none;
+    }
+    .statBtn{
+        height: 1rem;
+        width: 90%;
+        font-size: 0.5rem;
+        height: 50%;
+        display: block;
+        margin-left: 20%;
+    }
+}
+@media screen and (max-width: 1060px) and (min-width: 601px){
+    .doubtRow div{
+        font-size: 0.8rem;
+        overflow-wrap: break-word;
+        width: 20%;
+    }
+}
